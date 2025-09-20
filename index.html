@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animations Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎨 Interactive CSS + JavaScript Project</h1>
+  <p>Explore how CSS animations and JavaScript functions can work together!</p>
+
+  <!-- Part 1: CSS Transitions + Animations -->
+  <section id="part1">
+    <h2>Part 1: Pure CSS Effects</h2>
+    <p>Hover over the button to see a transition, and watch the box bounce using <code>@keyframes</code>.</p>
+    <button class="fancy-btn">Hover Over Me!</button>
+    <div class="animated-box"></div>
+  </section>
+
+  <!-- Part 2: JavaScript Functions -->
+  <section id="part2">
+    <h2>Part 2: JavaScript Functions in Action</h2>
+    <p>Click a button to run a function that calculates and displays results below.</p>
+    <button onclick="showSquare(7)">Show 7²</button>
+    <button onclick="showSum(15, 25)">Add 15 + 25</button>
+    <p id="function-result">Results will appear here...</p>
+  </section>
+
+  <!-- Part 3: CSS + JavaScript Combined -->
+  <section id="part3">
+    <h2>Part 3: Dynamic Animations with JS</h2>
+    <p>Use JavaScript to trigger CSS animations and transitions.</p>
+    <button id="animate-btn">Spin the Box</button>
+    <button id="toggle-modal">Show / Hide Modal</button>
+    <div class="trigger-box"></div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3>📢 Modal Window</h3>
+        <p>This popup is controlled using JavaScript + CSS animations.</p>
+        <button onclick="closeModal()">Close Modal</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>💡 Project built to demonstrate <strong>CSS transitions</strong>, <strong>keyframe animations</strong>, and <strong>JavaScript functions</strong>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
